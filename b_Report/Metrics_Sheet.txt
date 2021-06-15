@@ -1,0 +1,170 @@
+-------------- Marketing Mix Modeling --------------
+
+Springboard Data Science Capstone Three Project: Metrics Sheet
+
+
+-------------- SELECTED MODEl --------------
+
+Model 3: Ridge Regression (Option 1)
+
+Parameters:
+- weight coefficients: [ -791.336098    3151.1971674   -268.24762477  -926.76198798 2921.63099547  1636.13932349 -1776.94105276 -2201.83186011  3285.83744462 -2069.65154295  1027.87800445  -585.88437246]
+
+Hyperparameters:
+- alpha: 0.1
+
+Performance Metrics:
+- r-squared: .9611
+- MAE: 575.8927
+- rMSE: 757.1106
+
+
+
+
+
+
+
+-------------- OTHER MODELS --------------
+
+
+Baseline Model 1: Linear Regression (Option 1: Monthly media spend split evenly by days of month)
+
+Parameters:
+- weight coefficients: [-1301.57710503  3654.71545606  -269.1777158   -746.24750173  3811.23317674  1825.92569218 -1616.86423788 -3131.00244841  4133.71464699 -3199.15793683  2001.79131473 -1554.00020638]
+
+Performance Metrics:
+- r-squared: .96097
+- MAE: 586.07757
+- rMSE: 758.6619
+
+
+
+Baseline Model 2: Linear Regression (Option 2: Monthly media spend split randomly across days of month)
+
+Parameters:
+- weight coefficients: [1983.17241356  685.9249898  -506.91950153   76.17802375   53.41335433
+  140.68715118 -118.78621411  133.80354752  167.88226223   42.7938157 -205.9732189  64.10762603]
+
+Performance Metrics:
+- r-squared: .9121
+- MAE: 810.8975
+- rMSE: 1138.6845
+
+
+
+Model 4: Ridge Regression (Option 2)
+
+Parameters:
+- weight coefficients: [1351.01871594 1175.48419541 -396.38970461   80.81780281   31.56821219
+  157.50985418  -96.98666082  131.34423667  170.70338531   33.13470227
+ -183.74538558   50.28065581]
+
+Hyperparameters:
+- alpha: 10
+
+Performance Metrics:
+- r-squared: .9231
+- MAE: 781.9295
+- rMSE: 1064.8538
+
+
+
+Model 5: Lasso Regression (Option 1)
+
+Parameters:
+- weight coefficients: [2131.18879109    0.           -0.            0.           -0.
+  219.32043568   -0.            0.           75.12446465   -0.
+   -0.           -0.        ]
+
+Hyperparameters:
+- alpha: 134.5518
+
+Performance Metrics:
+- r-squared: .9317
+- MAE: 684.1494
+- rMSE: 1003.5886
+
+
+
+Model 6: Lasso Regression (Option 2)
+
+Parameters:
+- weight coefficients: [2187.47809587    0.           -0.            0.            0.
+   74.82215751    0.            0.           72.13089283    0.
+   -2.68107947    0.        ]
+
+Hyperparameters:
+- alpha: 134.5518
+
+Performance Metrics:
+- r-squared: .9264
+- MAE: 686.0254
+- rMSE: 1041.7917
+
+
+
+Model 7: Random Forest Regression (Option 1)
+
+Hyperparameters:
+- bootstrap: True
+- max_depth: None
+- max_features: auto
+- min_samples_leaf: 1
+- min_samples_split: 2
+- n_estimators: 100
+
+Performance Metrics:
+- r-squared: .8951
+- MAE: 549.1776
+- rMSE: 1243.9442
+
+
+
+Model 8: Random Forest Regression (Option 1) - with Hyperparameter Tuning
+
+Hyperparameters:
+- n_estimators: 1783,
+- min_samples_split: 5,
+- min_samples_leaf: 1,
+- max_features: auto,
+- max_depth: 40,
+- bootstrap: False
+
+Performance Metrics:
+- r-squared: .9143
+- MAE: 558.0814
+- rMSE: 1124.3996
+
+
+
+Model 9: Random Forest Regression (Option 2)
+
+Hyperparameters:
+- bootstrap: True
+- max_depth: None
+- max_features: auto
+- min_samples_leaf: 1
+- min_samples_split: 2
+- n_estimators: 100
+
+Performance Metrics:
+- r-squared: .8085
+- MAE: 646.0023
+- rMSE: 1680.3987
+
+
+
+Model 10: Random Forest Regression (Option 2) - with Hyperparameter Tuning
+
+Hyperparameters:
+- n_estimators: 266,
+- min_samples_split: 2,
+- min_samples_leaf: 1,
+- max_features: auto,
+- max_depth: 110,
+- bootstrap: True
+
+Performance Metrics:
+- r-squared: .7944
+- MAE: 665.4230
+- rMSE: 1741.2403
